@@ -1,0 +1,9 @@
+version: "2.0"
+services:
+        dnschal:
+                build: .
+                hostname: 'dnschal'
+                ports:
+                - "53:53/udp"
+                restart: 'always'
+
